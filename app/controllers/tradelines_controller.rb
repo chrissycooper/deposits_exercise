@@ -16,7 +16,7 @@ class TradelinesController < ApplicationController
     new_amount = @tradeline.amount - deposits_total
 
     @tradeline.update(
-      amount: new_amount
+      outstanding_balance: new_amount
     )
     
     render json: @tradeline
