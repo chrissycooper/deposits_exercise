@@ -13,7 +13,7 @@
 ActiveRecord::Schema[7.1].define(version: 2024_03_25_023309) do
   create_table "deposits", force: :cascade do |t|
     t.string "date_of_deposit"
-    t.string "amount"
+    t.decimal "amount", precision: 8, scale: 2
     t.integer "tradeline_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
