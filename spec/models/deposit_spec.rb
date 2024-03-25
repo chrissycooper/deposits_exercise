@@ -12,5 +12,10 @@ RSpec.describe Deposit, type: :model do
       deposit = Deposit.new({date_of_deposit: '05/05/2024', amount: 1000.00})
       expect(deposit.date_of_deposit).to eq '05/05/2024'
     end
+
+    it 'has an amount' do
+      deposit = Deposit.new({date_of_deposit: '05/05/2024', amount: 1000.00})
+      expect(deposit.amount).to eq 1000.00
+    end
   end
 end
