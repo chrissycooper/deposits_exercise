@@ -6,7 +6,20 @@ class TradelinesController < ApplicationController
   end
 
   def show
-    render json: Tradeline.find(params[:id])
+    @tradeline = Tradeline.find(params[:id])
+   
+    deposits_total = 0
+    @tradeline.deposits.each do |deposit|
+      deposits_total += deposit.amount
+    end
+
+    new_amount = @tradeline.amount - deposits_total
+
+    @tradeline.update(
+      amount: new_amount
+    )
+    
+    render json: @tradeline
   end
 
   def create
