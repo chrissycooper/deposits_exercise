@@ -1,4 +1,10 @@
 class DepositsController < ApplicationController
+
+  def index
+    @tradeline = Tradeline.find(params[:tradeline_id])
+    render json: @tradeline.deposits.all
+  end
+
   def create
     @tradeline = Tradeline.find(params[:tradeline_id])
     @deposit = @tradeline.deposits.create(
