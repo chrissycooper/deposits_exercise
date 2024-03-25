@@ -9,6 +9,14 @@ class TradelinesController < ApplicationController
     render json: Tradeline.find(params[:id])
   end
 
+  def create
+    @tradeline = Tradeline.create(
+      name: params[:name],
+      amount: params[:amount],
+    )
+    render json: @tradeline
+  end
+
   private
 
   def not_found
