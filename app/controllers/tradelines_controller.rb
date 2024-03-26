@@ -42,6 +42,7 @@ class TradelinesController < ApplicationController
     @tradeline = Tradeline.create(
       name: params[:name],
       amount: params[:amount],
+      outstanding_balance: params[:amount]
     )
     render json: @tradeline
   end
