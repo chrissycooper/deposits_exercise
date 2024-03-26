@@ -5,6 +5,12 @@ class DepositsController < ApplicationController
     render json: @tradeline.deposits.all
   end
 
+  def show
+    @tradeline = Tradeline.find(params[:tradeline_id])
+    @deposit = @tradeline.deposits.find(params[:id])
+    render json: @deposit
+  end
+
   def create
     @tradeline = Tradeline.find(params[:tradeline_id])
 

@@ -153,7 +153,7 @@ Deposits
   Request:
 
   ```JS
-  GET /tradelines/:id/deposits
+  GET /tradelines/:tradeline_id/deposits
   ```
 
   <br>
@@ -194,7 +194,7 @@ Deposits
   Request:
 
   ```JS
-  GET /tradelines/:id/deposits/:id
+  GET /tradelines/:tradeline_id/deposits/:id
   ```
 
   <br>
@@ -225,7 +225,7 @@ Deposits
   Request:
 
   ```JS
-  POST /tradelines/:id/deposits/
+  POST /tradelines/:tradeline_id/deposits/
   ```
   <br>
 
