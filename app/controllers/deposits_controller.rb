@@ -19,4 +19,10 @@ class DepositsController < ApplicationController
       render json: 'invalid deposit', status: :unprocessable_entity
     end
   end
+
+  private
+
+  def not_found
+    render json: 'not_found', status: :not_found
+  end
 end
