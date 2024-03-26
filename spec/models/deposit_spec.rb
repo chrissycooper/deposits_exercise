@@ -13,6 +13,7 @@ RSpec.describe Deposit, type: :model do
 
     it 'has a date' do
       expect(@deposit.date_of_deposit).to eq '05/05/2024'
+      expect(@deposit.date_of_deposit).to be_a String
     end
 
     it 'has an amount' do
