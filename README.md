@@ -10,7 +10,7 @@ This deposits exercise features a simple Ruby on Rails API which handles deposit
 4. Run `rails s` to start up the server. 
 
 ### Contributors
-[C. R. Cooper](https://github.com/chrissycooper)
+[Chrissy Cooper](https://github.com/chrissycooper)
 
 ### Wins
 This exercise felt like the perfect way to flex and stretch my fairly recent Rails muscles. I was happy with how easily my background in class-based javascript made conceptualizing the parent-child class relationship of the tradeline and deposits models. Thank you for taking the time to check it out!
@@ -20,7 +20,7 @@ I made an error in creating my deposits table, I migrated the amount attribute a
 
 ### Future Features
 There are a few things I would add to this exercise with more time investment. I would add versioning to the API, so that changes could more easily be applied without breaking code that hypothetically relied on the first version.
-Testing is a big component I would spend more time on. This was my first time working with RSpec, and I'd love to take a few days to deep dive into testing requests. 
+Testing is a big component I would spend more time on. This was my first time working with RSpec, and I'd love to take a few days to deep dive into testing requests. I have a few tests up and running to test a few basic happy paths and at least one sad path. I'd also like to spend more time working on integration testing, making sure everything is working together as expected. 
 
 ### Endpoints
 Tradeline
